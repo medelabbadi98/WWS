@@ -17,7 +17,7 @@ import jakarta.xml.ws.WebServiceFeature;
  * Generated source version: 3.0
  * 
  */
-@WebServiceClient(name = "BanqueWS", targetNamespace = "http://webservices/", wsdlLocation = "http://localhost:8088/?wsdl")
+@WebServiceClient(name = "BanqueWS", targetNamespace = "http://webservices/", wsdlLocation = "http://localhost:8087/?wsdl")
 public class BanqueWS
     extends Service
 {
@@ -30,7 +30,7 @@ public class BanqueWS
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8088/?wsdl");
+            url = new URL("http://localhost:8087/?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

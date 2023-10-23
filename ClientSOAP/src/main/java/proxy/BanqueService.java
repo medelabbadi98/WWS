@@ -41,21 +41,6 @@ public interface BanqueService {
      * 
      * @param montant
      * @return
-     *     returns double
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "convertion", targetNamespace = "http://webservices/", className = "proxy.Convertion")
-    @ResponseWrapper(localName = "convertionResponse", targetNamespace = "http://webservices/", className = "proxy.ConvertionResponse")
-    @Action(input = "http://webservices/BanqueService/convertionRequest", output = "http://webservices/BanqueService/convertionResponse")
-    public double convertion(
-        @WebParam(name = "montant", targetNamespace = "")
-        double montant);
-
-    /**
-     * 
-     * @param montant
-     * @return
      *     returns proxy.Compte
      */
     @WebMethod
@@ -66,5 +51,20 @@ public interface BanqueService {
     public Compte getCompte(
         @WebParam(name = "montant", targetNamespace = "")
         int montant);
+
+    /**
+     * 
+     * @param montant
+     * @return
+     *     returns double
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "convertion", targetNamespace = "http://webservices/", className = "proxy.Convertion")
+    @ResponseWrapper(localName = "convertionResponse", targetNamespace = "http://webservices/", className = "proxy.ConvertionResponse")
+    @Action(input = "http://webservices/BanqueService/convertionRequest", output = "http://webservices/BanqueService/convertionResponse")
+    public double convertion(
+        @WebParam(name = "montant", targetNamespace = "")
+        double montant);
 
 }

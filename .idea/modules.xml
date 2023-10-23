@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BanqueSOAP/BanqueSOAP.iml" filepath="$PROJECT_DIR$/BanqueSOAP/BanqueSOAP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClientSOAP/ClientSOAP.iml" filepath="$PROJECT_DIR$/ClientSOAP/ClientSOAP.iml" />
       <module fileurl="file://$PROJECT_DIR$/WWSOAP.iml" filepath="$PROJECT_DIR$/WWSOAP.iml" />
     </modules>
   </component>
